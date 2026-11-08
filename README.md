@@ -1,6 +1,6 @@
 # Veerendranadh Reddy Tangirala — Portfolio
 
-An orange-and-charcoal operations-desk portfolio with a desktop navigation rail, oversized name-led introduction, interactive workspace, and paper-toned project case files. A responsive security-lab portfolio based on the supplied CV, featuring cybersecurity studies, experience, credentials, skills, and project case studies. The interactive terminal supports `help`, `whoami`, `projects`, `skills`, `lab`, `contact`, and `clear`. It displays local portfolio information; it does not execute shell commands or scan networks.
+A cinematic cybersecurity portfolio with a deep blue and violet palette, animated orbital artwork, gradient typography, glass-style project cards, and an interactive portfolio console. Content is based on the supplied CV and documented project evidence. The console supports `help`, `whoami`, `projects`, `skills`, `lab`, `contact`, and `clear`; it does not execute shell commands or scan networks.
 
 **Live:** https://veerendranadhreddy11.github.io/
 

@@ -1,6 +1,6 @@
 # Veerendranadh Reddy Tangirala — Portfolio
 
-A cinematic cybersecurity portfolio with a deep blue and violet palette, animated orbital artwork, gradient typography, glass-style project cards, and an interactive portfolio console. Content is based on the supplied CV and documented project evidence. The console supports `help`, `whoami`, `projects`, `skills`, `lab`, `contact`, and `clear`; it does not execute shell commands or scan networks.
+A personal cybersecurity and Python-development portfolio with a full-page network-trace background, straightforward CV-based writing, a real PentestMate source excerpt, project demonstrations, and an interactive portfolio console. The console supports `help`, `whoami`, `projects`, `skills`, `lab`, `contact`, and `clear`; it does not execute shell commands or scan networks.
 
 **Live:** https://veerendranadhreddy11.github.io/
 

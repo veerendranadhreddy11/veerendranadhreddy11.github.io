@@ -1,6 +1,6 @@
 # Veerendranadh Reddy Tangirala — Portfolio
 
-A personal cybersecurity and Python-development portfolio with a full-page network-trace background, restrained cinematic lighting, reduced-motion-aware decorative network paths, straightforward CV-based writing, a real PentestMate source excerpt, project demonstrations, and an interactive portfolio console. The console supports `help`, `whoami`, `projects`, `skills`, `lab`, `contact`, and `clear`; it does not execute shell commands or scan networks.
+A project-led cybersecurity and Python-development portfolio with an illustrated network-equipment hero, accessible case-study tabs, a recorded project demo, source-code walkthrough, and an interactive portfolio console. Content comes from the supplied CV and documented project work. The console displays portfolio information and never executes shell commands or scans networks.
 
 **Live:** https://veerendranadhreddy11.github.io/
 
@@ -23,3 +23,5 @@ Open http://localhost:8080. This is a dependency-free static site: HTML, CSS, an
 The original CV PDF, phone number, and academic percentages are not published. The contact links use the GitHub account verified during setup and the LinkedIn URL supplied directly by the owner. The healthcare capstone is described as in development; no unsupported outcomes or production claims are added.
 
 Copyright © 2026 Veerendranadh Reddy Tangirala. All rights reserved in original portfolio materials. Third-party materials retain their respective rights.
+
+The decorative network-equipment hero image was generated for this site. It is not a photograph of the owner’s workplace or a claim of infrastructure ownership. It is served as an optimized local WebP asset.

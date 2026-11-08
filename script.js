@@ -41,7 +41,7 @@ if ('IntersectionObserver' in window) {
       });
     }
   }, { rootMargin: '-15% 0px -60% 0px' });
-  document.querySelectorAll('main > section[id], .about-section').forEach((section) => observer.observe(section));
+  document.querySelectorAll('#home, #workspace, #projects, #journey, #skills, #contact').forEach((section) => observer.observe(section));
 }
 
 // The portfolio console displays local portfolio information only.

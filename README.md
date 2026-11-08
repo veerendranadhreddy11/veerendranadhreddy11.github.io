@@ -1,6 +1,6 @@
 # Veerendranadh Reddy Tangirala — Portfolio
 
-A responsive security-lab portfolio based on the supplied CV, featuring cybersecurity studies, experience, credentials, skills, and project case studies. The interactive terminal supports `help`, `whoami`, `projects`, `skills`, `lab`, `contact`, and `clear`. It displays local portfolio information; it does not execute shell commands or scan networks.
+An orange-and-charcoal operations-desk portfolio with a desktop navigation rail, oversized name-led introduction, interactive workspace, and paper-toned project case files. A responsive security-lab portfolio based on the supplied CV, featuring cybersecurity studies, experience, credentials, skills, and project case studies. The interactive terminal supports `help`, `whoami`, `projects`, `skills`, `lab`, `contact`, and `clear`. It displays local portfolio information; it does not execute shell commands or scan networks.
 
 **Live:** https://veerendranadhreddy11.github.io/
 

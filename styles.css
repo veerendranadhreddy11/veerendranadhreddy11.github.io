@@ -31,9 +31,8 @@ body:before {
   z-index: -1;
   pointer-events: none;
   background:
-    linear-gradient(#0d11171a, #0d111788),
-    url("assets/security-traces.svg") center top/1500px 1000px repeat;
-  opacity: 0.14;
+    radial-gradient(ellipse at 20% 30%, #193d5120, transparent 65%),
+    radial-gradient(ellipse at 80% 80%, #64412a0c, transparent 60%);
 }
 a {
   color: inherit;
@@ -1870,7 +1869,7 @@ h4 {
       #080e150d 100%
     ),
     linear-gradient(0deg, #080e15cc, transparent 45%),
-    url("assets/network-hero.webp") center 55% / cover no-repeat;
+    url("assets/security-workspace.webp") center 55% / cover no-repeat;
 }
 .hero-inner {
   display: block;
@@ -2498,7 +2497,7 @@ h4 {
     background-image:
       linear-gradient(90deg, #080e15f2, #080e15a8),
       linear-gradient(0deg, #080e15b3, transparent),
-      url("assets/network-hero.webp");
+      url("assets/security-workspace.webp");
     background-position: 65% center;
   }
   .hero-actions {
@@ -2685,4 +2684,144 @@ h4 {
   width: 11px;
   height: 11px;
   vertical-align: -2px;
+}
+
+.hero-role-detail {
+  color: #b4d9e5;
+}
+.security-focus {
+  background: #0e1923;
+  border-bottom: 1px solid #344e60;
+}
+.security-focus .section-heading {
+  margin-bottom: 36px;
+}
+.security-focus-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 17px;
+}
+.focus-card {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 22px;
+  border: 1px solid #385569;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #172c3b, #111f2c);
+  position: relative;
+  overflow: hidden;
+}
+.focus-card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 22px;
+  width: 30px;
+  height: 2px;
+  background: #a4ddeb;
+}
+.focus-icon {
+  width: 37px;
+  height: 37px;
+  margin-bottom: 22px;
+  color: #b8e0ed;
+}
+.focus-icon svg {
+  width: 100%;
+  height: 100%;
+}
+.focus-level {
+  font: 7px/1.8 var(--mono);
+  letter-spacing: 0.8px;
+  color: #b6cfdd;
+  margin: 0 0 10px;
+}
+.focus-card h3 {
+  font-weight: 400;
+  font-size: 19px;
+  letter-spacing: -0.4px;
+  margin: 0 0 15px;
+  color: #e8f2f8;
+}
+.focus-card > p:not(.focus-level) {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #a9bfce;
+  margin: 0 0 23px;
+}
+.focus-detail {
+  font: 7px/1.9 var(--mono);
+  letter-spacing: 0.7px;
+  color: #b7d7e5;
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px solid #38566b;
+}
+.hero-image {
+  background-position: center 55%;
+}
+@media (max-width: 1050px) {
+  .security-focus-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 19px;
+  }
+  .focus-card {
+    padding: 25px;
+  }
+  .focus-level {
+    font-size: 8px;
+  }
+  .focus-detail {
+    font-size: 8px;
+  }
+  .focus-card h3 {
+    font-size: 21px;
+  }
+}
+@media (max-width: 760px) {
+  .security-focus-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .focus-card {
+    padding: 24px;
+  }
+  .focus-icon {
+    margin-bottom: 18px;
+  }
+  .focus-card h3 {
+    font-size: 21px;
+  }
+  .focus-card > p:not(.focus-level) {
+    font-size: 12px;
+  }
+  .hero-role {
+    font-size: 24px;
+  }
+  .hero-role-detail {
+    font-size: 21px;
+  }
+  .hero-image {
+    background-position: 68% center;
+  }
+}
+@media print {
+  .security-focus {
+    background: white;
+    color: black;
+  }
+  .security-focus-grid {
+    display: block;
+  }
+  .focus-card {
+    background: white;
+    break-inside: avoid;
+    margin-bottom: 15px;
+  }
+  .focus-card h3 {
+    color: black;
+  }
+  .focus-card > p:not(.focus-level) {
+    color: #444;
+  }
 }

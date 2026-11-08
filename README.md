@@ -1,6 +1,6 @@
 # Veerendranadh Reddy Tangirala — Portfolio
 
-A responsive personal portfolio based on the supplied CV, featuring cybersecurity studies, experience, credentials, skills, and project work.
+A responsive security-lab portfolio based on the supplied CV, featuring cybersecurity studies, experience, credentials, skills, and project case studies. The interactive terminal supports `help`, `whoami`, `projects`, `skills`, `lab`, `contact`, and `clear`. It displays local portfolio information; it does not execute shell commands or scan networks.
 
 **Live:** https://veerendranadhreddy11.github.io/
 
@@ -16,7 +16,7 @@ Open http://localhost:8080. This is a dependency-free static site: HTML, CSS, an
 
 - Update `index.html` for biography, education, project details, and contact links.
 - `styles.css` contains responsive layouts, print styling, and reduced-motion support.
-- `script.js` handles mobile navigation, active links, and copying the email address.
+- `script.js` handles mobile navigation, active links, email copying, and the accessible portfolio console with command history. User input is rendered as text, never executable HTML.
 - `assets/` contains the PentestMate demo, English captions, video poster, and favicon.
 - PentestMate's demo was recorded on Kali and includes male AI narration. It is owner-authorized media from the author's project. See the [source project](https://github.com/veerendranadhreddy11/PentestMate) for its proprietary license, provenance, and test evidence.
 

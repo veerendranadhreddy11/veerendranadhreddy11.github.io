@@ -1,0 +1,31 @@
+{
+  "verifiedAt": "2026-11-11T23:38:26.725Z",
+  "account": "veerendranadhreddy11",
+  "method": "GitHub REST API via maintainer authentication; no credentials are stored",
+  "repositories": [
+    {
+      "name": "CyberSOC",
+      "url": "https://github.com/veerendranadhreddy11/CyberSOC",
+      "description": null,
+      "language": null,
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-09T21:09:59Z"
+    },
+    {
+      "name": "PentestMate",
+      "url": "https://github.com/veerendranadhreddy11/PentestMate",
+      "description": "A Python-based penetration testing assistant for Nmap scan analysis, vulnerability tracking, evidence management, and automated PDF reporting.",
+      "language": "Python",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-05T21:01:08Z"
+    },
+    {
+      "name": "veerendranadhreddy11.github.io",
+      "url": "https://github.com/veerendranadhreddy11/veerendranadhreddy11.github.io",
+      "description": "Personal cybersecurity portfolio showcasing penetration testing, Python automation, and security projects.",
+      "language": "CSS",
+      "defaultBranch": "main",
+      "pushedAt": "2026-11-08T17:00:59Z"
+    }
+  ]
+}

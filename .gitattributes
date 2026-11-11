@@ -1,0 +1,9 @@
+*.pdf binary
+*.woff2 binary
+assets/build/* linguist-generated=true -whitespace
+projects/*/index.html linguist-generated=true
+index.html linguist-generated=true
+fonts/* linguist-vendored=true -whitespace
+public/fonts/* linguist-vendored=true -whitespace
+licenses/* linguist-vendored=true
+public/licenses/* linguist-vendored=true

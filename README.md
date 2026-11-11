@@ -1,27 +1,71 @@
-# Veerendranadh Reddy Tangirala — Portfolio
-
-A project-led cybersecurity and Python-development portfolio with an illustrated cybersecurity-research workspace hero, accessible case-study tabs, a recorded project demo, source-code walkthrough, and an interactive portfolio console. Content comes from the supplied CV and documented project work. The console displays portfolio information and never executes shell commands or scans networks.
+# Veerendranadh Reddy Tangirala · Security portfolio
 
 **Live:** https://veerendranadhreddy11.github.io/
 
-## Run locally
+A React/TypeScript cybersecurity portfolio with a Three.js topology, interactive SOC-style simulation, documented project case studies, a safe portfolio terminal, skills explorer, timeline, and downloadable CV.
+
+## Content is evidence-led
+
+- Education, internship, credentials, languages, and foundational skills follow the supplied CV.
+- PentestMate has implemented source, a narrated Kali demonstration, and documented test evidence. Its 25-test validation is a recorded result, not a live status indicator.
+- CyberSOC was inspected as an initial scaffold containing README, license, and gitignore. No implemented SOC product is claimed.
+- Academic projects without available public source are labeled accordingly. The healthcare capstone remains in development.
+- All dashboard traffic, events, severity records, topology nodes, and documentation-range IP addresses are **simulated**. The dashboard does not monitor devices, scan networks, or connect to external security services.
+- The terminal accepts allowlisted portfolio commands and renders input as text. It never executes arbitrary shell commands.
+- No GitHub contribution counts or proficiency percentages are invented.
+
+## Develop
+
+Requires Node.js 22.18+ and npm. The project uses React, TypeScript, Vite, Three.js, and Lucide icons. SVG charts keep the simulation lightweight; fonts are self-hosted.
 
 ```bash
-python3 -m http.server 8080
+npm ci
+npm run dev
 ```
 
-Open http://localhost:8080. This is a dependency-free static site: HTML, CSS, and JavaScript, published by GitHub Pages from `main` at the repository root.
+Open the URL printed by Vite. The source lives in `app/`.
 
-## Content and media
+## Production and GitHub Pages
 
-- Update `index.html` for biography, education, project details, and contact links.
-- `styles.css` contains responsive layouts, print styling, and reduced-motion support.
-- `script.js` handles mobile navigation, active links, email copying, and the accessible portfolio console with command history. User input is rendered as text, never executable HTML.
-- `assets/` contains the PentestMate demo, English captions, video poster, and favicon.
-- PentestMate's demo was recorded on Kali and includes male AI narration. It is owner-authorized media from the author's project. See the [source project](https://github.com/veerendranadhreddy11/PentestMate) for its proprietary license, provenance, and test evidence.
+```bash
+npm run build
+```
 
-The original CV PDF, phone number, and academic percentages are not published. The contact links use the GitHub account verified during setup and the LinkedIn URL supplied directly by the owner. The healthcare capstone is described as in development; no unsupported outcomes or production claims are added.
+TypeScript is checked before Vite builds into ignored `dist/`. `scripts/pages.mjs` publishes the generated HTML, hashed bundles under `assets/build/`, local fonts/licenses, CV, and static project detail pages to this repository's root. Only the generated build-bundle folder is refreshed; source and retained media are preserved. The root HTML also includes static profile/project summaries, JSON-LD, project-specific metadata, robots.txt, and a sitemap.
 
-Copyright © 2026 Veerendranadh Reddy Tangirala. All rights reserved in original portfolio materials. Third-party materials retain their respective rights.
+The existing GitHub Pages configuration serves **main / root**. Commit the source, lockfile, and regenerated Pages artifacts, then push `main`. No server or credentials are required by the deployed site. `npm run preview` serves Vite's `dist/`; testing the root publication also checks the generated detail-page HTML.
 
-The decorative security-research workspace hero image was generated for this site. It is not a photograph of the owner’s desk or a claim to own the pictured equipment. The cybersecurity focus cards distinguish project practice, foundational study, and interests; they do not claim professional expertise outside the CV. It is served as an optimized local WebP asset.
+## Test
+
+```bash
+npx playwright install chromium
+npm run build
+npm test
+```
+
+Python 3 is used by the test server. To use an installed Chromium:
+
+```bash
+PLAYWRIGHT_CHROMIUM_EXECUTABLE=/usr/bin/chromium npm test
+```
+
+The browser suite checks WebGL or fallback topology, simulation scenarios and pause/reset/filter controls, terminal commands and injection resistance, case-study tabs, play/pause architecture walkthroughs, direct detail routes, project and skill filters, timeline, CV download, video/captions, copy-email, five viewport widths, mobile navigation, reduced motion, no-JavaScript fallback, static metadata/assets, and axe WCAG A/AA checks. These are portfolio browser tests; they do not rerun PentestMate's original lab suite. `.github/workflows/portfolio.yml` runs the build and browser suite on main pushes and pull requests.
+
+## Maintain content
+
+- `app/data.ts`: CV-based profile, projects, skill context, repository presentation, and evidence statements.
+- `app/components/`: topology, simulation/charts, terminal, skills, and journey.
+- `app/App.tsx`: recruiter-facing homepage, source explorer, detail pages, contact, navigation.
+- `public/`: retained demo assets, downloadable CV, locally hosted fonts, licenses, and source snapshots.
+- `scripts/refresh-github.mjs`: refresh the public repository metadata snapshot with an already authenticated `gh` CLI. No token is written to the website. Run `npm run refresh:github`, review the project status in `app/data.ts`, update its verification date, and rebuild. The deployed site uses a reviewed snapshot to avoid public API rate limits.
+- `scripts/create_cv.py`: generate a privacy-conscious CV from the supplied CV and verified project work (requires ReportLab 4.4.9). The original uploaded PDF, phone number, and academic percentages are not published.
+
+## Accessibility and motion
+
+Every 3D node has an equivalent button. A 2D interactive fallback remains available when WebGL cannot initialize. Graph rendering pauses offscreen and in hidden tabs; auto-rotation and opening animation respect reduced motion. Simulation starts paused for reduced-motion users and can always be paused manually. Filters, controls, tabs, keyboard history, and labeled chart summaries remain usable without relying on color alone. Without JavaScript, static profile/project summaries and source/contact links remain in the published HTML.
+
+## Rights and media
+
+Copyright © 2026 Veerendranadh Reddy Tangirala in original portfolio materials. Third-party materials retain their licenses. Served notices are in `licenses/`; self-hosted DM Sans and Space Grotesk include their SIL Open Font License texts in `fonts/`.
+
+PentestMate is proprietary; inspect its repository license before reusing it. Its demo is owner-authorized project media, includes male AI narration, and has English captions. The decorative security-workspace artwork is generated art, not a photograph of the owner's workplace or a claim to own pictured equipment.

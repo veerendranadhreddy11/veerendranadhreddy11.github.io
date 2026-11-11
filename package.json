@@ -1,0 +1,32 @@
+{
+  "name": "veerendranadh-security-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build && node scripts/pages.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "check": "tsc --noEmit",
+    "refresh:github": "node scripts/refresh-github.mjs",
+    "test": "playwright test"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "three": "^0.182.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.65.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@types/three": "^0.182.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.2.0"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  }
+}
